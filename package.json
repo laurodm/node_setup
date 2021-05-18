@@ -4,6 +4,7 @@
   "description": "Setup exemplo para projetos node",
   "main": "index.js",
   "scripts": {
+    "build": "babel src --extensions \".js,.ts\" --out-dir dist --copy-files --no-copy-ignored",
     "dev": "tsnd -r tsconfig-paths/register --respawn --transpile-only --ignore-watch node_modules src/server.ts",
     "test": "jest"
   },
@@ -14,9 +15,15 @@
     "express": "^4.17.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/node": "^7.14.2",
+    "@babel/preset-env": "^7.14.2",
+    "@babel/preset-typescript": "^7.13.0",
     "@types/express": "^4.17.11",
     "@typescript-eslint/eslint-plugin": "^4.24.0",
     "@typescript-eslint/parser": "^4.24.0",
+    "babel-plugin-module-resolver": "^4.1.0",
     "eslint": "^7.26.0",
     "eslint-config-standard": "^16.0.2",
     "eslint-plugin-import": "^2.23.2",
