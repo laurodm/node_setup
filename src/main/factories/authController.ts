@@ -1,4 +1,4 @@
-import { AuthController } from '@/presentation/controllers/auth-controller'
+import { AuthController } from '@/adapters/presentation/controllers/auth-controller'
 
 export const makeAuthController = () => {
   return new AuthController()

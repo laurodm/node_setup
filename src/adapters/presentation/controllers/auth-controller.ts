@@ -1,5 +1,5 @@
 import { ok } from './helpers/http-helper'
-import { Controller } from './ports/Controller'
+import { Controller } from './ports/controller'
 import { HttpRequest, HttpResponse } from './ports/http'
 
 export class AuthController implements Controller {
