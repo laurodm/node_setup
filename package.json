@@ -13,6 +13,7 @@
   "license": "ISC",
   "dependencies": {
     "@types/jest": "^26.0.23",
+    "@types/sqlite3": "^3.1.7",
     "express": "^4.17.1"
   },
   "devDependencies": {
@@ -31,6 +32,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.3.1",
     "jest": "^26.6.3",
+    "sqlite3": "^5.0.2",
     "ts-jest": "^26.5.6",
     "ts-node-dev": "^1.1.6",
     "tsconfig-paths": "^3.9.0",
