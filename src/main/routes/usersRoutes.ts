@@ -1,7 +1,6 @@
 import { Router } from 'express'
-import { adaptRoute } from '../adapters/express-route-adapter'
-import { makeUsersController } from '../factories/getUserController'
+import findUsers from '../controllers/users/findUsers'
 
 export default (router: Router): void => {
-  router.get('/users', adaptRoute(makeUsersController()))
+  router.get('/users', findUsers)
 }
